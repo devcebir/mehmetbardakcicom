@@ -9,10 +9,10 @@ const page = () => {
   return (
     <div className="page h-screen flex flex-col items-center justify-center">
       <div className="flex flex-col">
-        <h2 className="text-6xl font-bold max-sm:text-4xl max-xsm:text-2xl max-xsm:pt-2">
+        <h2 className="text-6xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:text-2xl max-xsm:text-xl">
           Frontend Developer
         </h2>
-        <div className="text-zinc-400 flex flex-col gap-5 text-2xl mt-10 max-sm:text-lg max-xsm:mt-2">
+        <div className="text-zinc-400 flex flex-col gap-5 text-2xl mt-10 max-lg:text-xl max-md:text-base max-sm:text-base max-xsm:text-sm">
           <p>
             Selamlar, ben{" "}
             <span className="text-white font-semibold hover:text-amber-600 transform transition-all duration-300">
@@ -41,7 +41,7 @@ const page = () => {
             dünyasındaki becerilerimi güçlendirmek istiyorum.
           </p>
 
-          <div className="flex items-center gap-2 mt-5 max-sm:text-base">
+          <div className="flex items-center gap-2 mt-5 -sm:text-base">
             <p className="flex items-center gap-2">
               Projelerimi incelemek için <RiArrowRightSLine />
             </p>

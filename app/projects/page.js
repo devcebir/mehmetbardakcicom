@@ -10,10 +10,10 @@ export const metadata = {
  
 const page = () => {
   return (
-    <div className="page h-screen flex flex-col justify-center">
-      <h2 className="font-bold text-6xl mb-10 max-sm:text-4xl">Projeler</h2>
-      <div className="flex items-center gap-5 max-sm:flex-col max-sm:gap-8 flex-wrap">
-        <div className="flex flex-col gap-4 justify-center p-3 hover:bg-zinc-800 border border-zinc-900 w-[384px] max-sm:w-[300px] rounded-2xl transform transition-all duration-300">
+    <div className="page h-screen flex flex-col justify-center max-sm:my-24">
+      <h2 className="font-bold text-6xl mb-10 max-xl:text-5xl max-sm:text-3xl">Projeler</h2>
+      <div className="flex items-center gap-5 max-sm:flex-col max-sm:gap-8 ">
+        <div className="flex flex-col gap-4 justify-center p-3 hover:bg-zinc-800 border border-zinc-900 w-[384px] max-sm:w-[310px] max-xsm:w-[280px] rounded-2xl transform transition-all duration-300">
           <Link href="https://kitchen-app-alpha.vercel.app/" target="_blank">
             <Image
               src={KitchenAppImage}
@@ -51,7 +51,7 @@ const page = () => {
 
         {/*  */}
 
-        <div className="flex flex-col gap-4 justify-center p-3 hover:bg-zinc-800 border border-zinc-900 w-[400px] max-sm:w-[300px] rounded-2xl transform transition-all duration-300">
+        <div className="flex flex-col gap-4 justify-center p-3 hover:bg-zinc-800 border border-zinc-900 w-[400px] max-sm:w-[310px] max-xsm:w-[280px] rounded-2xl transform transition-all duration-300">
           <Link href="https://dapp-gate-clon.vercel.app/" target="_blank">
             <Image
               src={DappGateImage}

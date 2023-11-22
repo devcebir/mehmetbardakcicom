@@ -7,14 +7,14 @@ export const metadata = {
 }; 
 const Header = () => {
   return (
-    <header className="flex justify-between items-center text-3xl py-5 max-sm:text-lg max-lg:text2xl">
+    <header className="flex justify-between items-center text-3xl py-5 max-lg:text-2xl max-sm:text-base">
       <h1 className="font-bold hover:text-amber-600 transform transition-all duration-300">
         <Link href="/">mehmet bardakcı</Link>
       </h1>
       <div className="flex items-center gap-5">
         <Link
           href="/blog"
-          className="text-xl hover:text-zinc-400 border-b-2 hover:border-zinc-400 transform transition-all duration-300 max-sm:text-base"
+          className="text-xl hover:text-zinc-400 border-b-2 hover:border-zinc-400 transform transition-all duration-300 max-sm:text-sm"
         >
           <p>Blog</p>
         </Link>

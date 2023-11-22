@@ -12,7 +12,7 @@ const page = () => {
         <h2 className="text-6xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:text-2xl max-xsm:text-xl">
           Frontend Developer
         </h2>
-        <div className="text-zinc-400 flex flex-col gap-5 text-2xl mt-10 max-lg:text-xl max-md:text-base max-sm:text-base max-xsm:text-sm">
+        <div className="text-zinc-400 flex flex-col gap-5 text-2xl mt-10 max-sm:mt-5 max-lg:text-xl max-md:text-base max-sm:text-base">
           <p>
             Selamlar, ben{" "}
             <span className="text-white font-semibold hover:text-amber-600 transform transition-all duration-300">

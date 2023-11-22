@@ -2,9 +2,7 @@ import Link from "next/link";
 import "@/components/header/header.css";
 import { TbAtom2Filled } from "react-icons/tb";
 
-export const metadata = {
-  title: "Mehmet Bardakcı - Projeler",
-}; 
+
 const Header = () => {
   return (
     <header className="flex justify-between items-center text-3xl py-5 max-lg:text-2xl max-sm:text-base">

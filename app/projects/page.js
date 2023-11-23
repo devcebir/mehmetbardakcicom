@@ -11,7 +11,7 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div className="page h-screen flex flex-col justify-center max-sm:my-24">
+    <div className="page h-screen flex flex-col justify-center max-sm:my-80">
       <h2 className="font-bold text-6xl mb-10 max-xl:text-5xl max-sm:text-3xl">
         Projeler
       </h2>

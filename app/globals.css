@@ -2,38 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes slide-up {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+.animated-gradient {
+  background: linear-gradient(270deg, #f7ffe5, #5c8374, #276363b6);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient 3s ease infinite;
 }
 
-@media (min-width: 768px) {
-  .page {
-    animation: slide-up 1s ease;
-  }
-  body {
-    overflow: hidden;
-  }
-}
-
-@keyframes fadeInOut {
+@keyframes gradient {
   0% {
-    opacity: 0;
+    background-position: 0% 50%;
   }
+
   50% {
-    opacity: 1;
+    background-position: 100% 50%;
   }
+
   100% {
-    opacity: 0;
+    background-position: 0% 50%;
   }
 }
 
-.loading-gradient {
-  animation: fadeInOut 3s infinite;
+.animated-bg-gradient {
+  animation: gradient 7s ease infinite;
+  background: linear-gradient(270deg, #276363b6, #183d3d);
 }

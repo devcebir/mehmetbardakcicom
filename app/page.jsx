@@ -20,12 +20,12 @@ export default function page() {
         >
           Frontend Developer
         </h3>
-        <h3 className="text-6xl font-bold text-white select-none max-xxl:text-5xl max-md:text-4xl max-sm:text-2xl max-xsm:text-xl mt-5 max-md:mt-3">
+        <h3 className="text-6xl font-bold text-white select-none max-xxl:text-5xl max-md:text-4xl max-sm:text-2xl mt-5 max-md:mt-3">
           Frontend Developer
         </h3>
         <div
           className="text-3xl text-[#F7FFE5] px-60 font-medium max-xxl:px-20 max-xl:px-10 max-xxl:text-2xl max-lg:px-20 max-sm:px-0 
-        max-sm:text-base flex flex-col gap-2 max-md:text-xl max-xsm:text-sm"
+        max-sm:text-base flex flex-col gap-2 max-md:text-xl"
         >
           <p className="">
             Selamlar, ben Mehmet Bardakcı. 2022 yılından bu yana web

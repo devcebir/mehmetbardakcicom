@@ -10,10 +10,7 @@ const MontserratFont = Montserrat({
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="tr"
-      className={`${MontserratFont.className}`}
-    >
+    <html lang="tr" className={`${MontserratFont.className}`}>
       <body className="flex flex-col justify-between h-screen bg-[#040D12]">
         <Header />
         {children}
@@ -22,4 +19,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
- 

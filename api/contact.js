@@ -1,4 +1,5 @@
 // api/contact.js
+
 const nodemailer = require("nodemailer");
 
 export default async function handler(req, res) {
@@ -11,14 +12,14 @@ export default async function handler(req, res) {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "sizin-email@gmail.com",
-      pass: "sizin-email-şifreniz",
+      user: process.env.NEXT_PUBLIC_EMAIL_USER,
+      pass: process.env.NEXT_PUBLIC_EMAIL_PASS,
     },
   });
 
   const mailOptions = {
-    from: "sizin-email@gmail.com",
-    to: "sizin-email@gmail.com",
+    from: process.env.NEXT_PUBLIC_EMAIL_USER,
+    to: process.env.NEXT_PUBLIC_EMAIL_USER,
     subject: `Yeni İletişim Formu Gönderisi: ${subject}`,
     text: `Ad: ${name}\nE-posta: ${email}\nMesaj: ${message}`,
   };

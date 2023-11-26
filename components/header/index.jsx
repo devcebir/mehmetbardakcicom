@@ -8,14 +8,14 @@ import { IoMenu } from "react-icons/io5";
 export default function Header() {
   return (
     <header className=" text-white  text-xl font-bold">
-      <div className="flex items-center justify-between px-36 py-3 max-md:px-10">
+      <div className="flex items-center justify-between px-36 py-3 max-md:px-10 max-md:flex-col max-md:gap-2">
         <h1 className=" hover:text-[#D2E3C8] transition-all duration-300">
           <Link href="/" className="text-2xl">
             <SiAtom />
           </Link>
         </h1>
 
-        <nav className="flex items-center gap-6 font-medium text-lg max-md:hidden">
+        <nav className="flex items-center gap-6 font-medium text-lg max-md:text-sm">
           <Link
             className="hover:text-[#D2E3C8] transition-all duration-300"
             href="/projects"
@@ -36,8 +36,8 @@ export default function Header() {
           </Link>
         </nav>
 
-        <div className="flex items-center gap-3 text-2xl">
-          <div className="flex items-center gap-3 max-md:hidden">
+        <div className="flex items-center gap-3 text-2xl max-md:hidden">
+          <div className="flex items-center gap-3">
             <Link
               className="hover:text-[#D2E3C8] transition-all duration-300"
               href="https://github.com/devcebir"
@@ -53,9 +53,6 @@ export default function Header() {
               <FaLinkedin />
             </Link>
           </div>
-          <button className="hidden max-md:block">
-            <IoMenu />
-          </button>
         </div>
       </div>
 

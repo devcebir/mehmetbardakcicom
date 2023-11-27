@@ -3,6 +3,11 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Alert, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
+
+export const metadata = {
+  title: "Mehmet Bardakcı - İletişim",
+};
+
 export default function ProjectsPage() {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false); // Yeni state
 

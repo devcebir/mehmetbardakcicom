@@ -1,5 +1,9 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Mehmet Bardakcı - Hakkımda",
+};
+
 export default function ProjectsPage() {
   return (
     <div className="relative z-10 h-screen px-10 flex flex-col items-center justify-center text-center gap-20 max-xxl:gap-10 max-xl:gap-5 max-md:my-14 max-sm:my-32 max-xsm:my-56">

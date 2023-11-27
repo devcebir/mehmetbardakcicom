@@ -3,10 +3,16 @@ import Link from "next/link";
 import furniro from "@/images/furniro.png";
 import { LuCode2 } from "react-icons/lu";
 
+export const metadata = {
+  title: "Mehmet Bardakcı - Projeler",
+};
+
 export default function ProjectsPage() {
   return (
-    <div className="relative z-10 h-screen px-10 max-sm:px-1 flex flex-col items-center justify-center text-center gap-20 max-xxl:gap-10 max-md:my-36
-    max-base:my-72">
+    <div
+      className="relative z-10 h-screen px-10 max-sm:px-1 flex flex-col items-center justify-center text-center gap-20 max-xxl:gap-10 max-md:my-36
+    max-base:my-72"
+    >
       <div
         className="bg-gradient-to-br animated-bg-gradient top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 from-[#183D3D] 
         to-[#183D3D] opacity-60 absolute inset-0 filter blur-3xl rounded-full w-[35rem] h-[35rem] max-xxl:w-[30rem] max-xxl:h-[30rem] 

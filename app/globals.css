@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .animated-gradient {
-  background: linear-gradient(270deg, #f7ffe5, #5c8374, #276363b6);
+  background: linear-gradient(270deg, #bac5a2, #5c8374, #276363b6);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   color: transparent;
@@ -24,7 +24,15 @@
   }
 }
 
-.animated-bg-gradient {
-  animation: gradient 7s ease infinite;
-  background: linear-gradient(270deg, #276363b6, #183d3d);
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.custom-icon {
+  animation: spin 4s linear infinite;
 }

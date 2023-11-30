@@ -56,7 +56,7 @@ export default function Header() {
 
       <nav className="flex flex-col items-center justify-center gap-5 text-3xl font-medium ">
         <Link
-          className={`hover:text-zinc-100 transition-all duration-300 ${
+          className={`hover:text-zinc-100 transition-all duration-300 hover:bg-white hover:bg-opacity-5 px-4 py-2 rounded-2xl  ${
             pathname === "/" ? "text-zinc-100" : "text-zinc-500"
           }`}
           href="/"
@@ -65,7 +65,7 @@ export default function Header() {
           <p className="max-laptop:hidden">Ana Sayfa</p>
         </Link>
         <Link
-          className={`hover:text-zinc-100 transition-all duration-300 ${
+          className={`hover:text-zinc-100 transition-all duration-300 hover:bg-white hover:bg-opacity-5 px-4 py-2 rounded-2xl  ${
             pathname === "/blog" ? "text-zinc-100" : "text-zinc-500"
           }`}
           href="/blog"
@@ -74,7 +74,7 @@ export default function Header() {
           <p className="max-laptop:hidden">Blog</p>
         </Link>
         <Link
-          className={`hover:text-zinc-100 transition-all duration-300 ${
+          className={`hover:text-zinc-100 transition-all duration-300 hover:bg-white hover:bg-opacity-5 px-4 py-2 rounded-2xl  ${
             pathname === "/projects" ? "text-zinc-100" : "text-zinc-500"
           }`}
           href="/projects"
@@ -83,7 +83,7 @@ export default function Header() {
           <p className="max-laptop:hidden">Projeler</p>
         </Link>
         <Link
-          className={`hover:text-zinc-100 transition-all duration-300 ${
+          className={`hover:text-zinc-100 transition-all duration-300 hover:bg-white hover:bg-opacity-5 px-4 py-2 rounded-2xl  ${
             pathname === "/lists" ? "text-zinc-100" : "text-zinc-500"
           }`}
           href="/lists"

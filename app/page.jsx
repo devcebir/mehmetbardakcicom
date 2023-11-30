@@ -1,4 +1,4 @@
-import { TbAtom2Filled } from "react-icons/tb";
+import HomePageContainer from "@/containers/homapge";
 export const metadata = {
   title: "Mehmet Bardakcı - Frontend Developer",
   description: "Mehmet Cardakcı - Frontend Developer",
@@ -7,9 +7,8 @@ export const metadata = {
 export default function page() {
   return (
     <div className="w-full p-5 h-screen">
-      <div className="bg-white h-full rounded-3xl flex flex-col items-center justify-center text-9xl font-semibold gap-5">
-        <TbAtom2Filled className="rotate-infinite" />
-        <p className="text-4xl font-bolf">Ana Sayfa</p>
+      <div className="bg-white h-full rounded-3xl flex flex-col items-center text-center gap-5 px-40 pt-10">
+        <HomePageContainer />
       </div>
     </div>
   );

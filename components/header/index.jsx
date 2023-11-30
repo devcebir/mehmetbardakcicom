@@ -18,7 +18,7 @@ export default function Header() {
   const pathname = usePathname();
   return (
     <header
-      className={`w-[20%] max-laptop:w-[10%] max-mobile:w-[10%] max-desktop:w-[25%] flex flex-col items-center justify-between max-laptop:justify-center my-5 pl-5`}
+      className={`w-[20%] max-[1537px]:w-[21%] flex flex-col items-center justify-between max-laptop:justify-center my-5 pl-5`}
     >
       <div
         className="text-zinc-200 text-xl flex items-center justify-center gap-3 max-laptop:hidden py-2 px-4 rounded-2xl border border-zinc-800

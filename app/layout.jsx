@@ -1,6 +1,5 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header";
 
 const PoppinsFont = Poppins({
   subsets: ["latin"],
@@ -10,10 +9,7 @@ const PoppinsFont = Poppins({
 export default function RootLayout({ children }) {
   return (
     <html lang="tr">
-      <body className={`flex h-screen bg-zinc-900 ${PoppinsFont.className}`}>
-        <Header />
-        {children}
-      </body>
+      <body className={`${PoppinsFont.className}`}>{children}</body>
     </html>
   );
 }

@@ -1,15 +1,13 @@
-import HomePageContainer from "@/containers/homapge";
 export const metadata = {
-  title: "Mehmet Bardakcı - Frontend Developer",
-  description: "Mehmet Cardakcı - Frontend Developer",
+  title: "Mehmet Bardakcı",
+  description: "I am a Frontend Developer",
 };
+import { TbAtom2Filled } from "react-icons/tb";
 
 export default function page() {
   return (
-    <div className="w-full p-5 h-screen">
-      <div className="bg-white h-full rounded-3xl flex flex-col items-center text-center gap-5 px-40 pt-10">
-        <HomePageContainer />
-      </div>
+    <div className="flex flex-col items-center justify-center text-center h-screen">
+      <TbAtom2Filled class="animate-spin text-9xl" />
     </div>
   );
 }

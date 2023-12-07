@@ -1,8 +1,8 @@
 "use client";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import { IoSunnyOutline } from "react-icons/io5";
-import { PiMoonFill } from "react-icons/pi";
+import { IoColorPaletteOutline } from "react-icons/io5";
+import { IoColorPalette } from "react-icons/io5";
 
 export default function ThemeComp() {
   const [mounted, setMounted] = useState(false);
@@ -14,17 +14,19 @@ export default function ThemeComp() {
 
   const themeMode = theme === "system" ? systemTheme : theme;
   return (
-    <div className="flex items-center text-9xl">
+    <div className="flex items-center text-2xl">
       {mounted &&
         (themeMode === "light" ? (
-          <PiMoonFill
+          <IoColorPaletteOutline
             onClick={() => setTheme("dark")}
-            className="text-9xl max-[768px]:text-xl transform hover:-rotate-180 transition-all duration-1000 cursor-pointer"
+            className="text-9xl max-[768px]:text-xl transform 
+            hover:-translate-y-10 transition-all duration-500 cursor-pointer text-[#DDE6ED]"
           />
         ) : (
-          <IoSunnyOutline
+          <IoColorPalette
             onClick={() => setTheme("light")}
-            className="text-9xl max-[768px]:text-xl transform hover:rotate-180 transition-all duration-1000 cursor-pointer"
+            className="text-9xl text-white max-[768px]:text-xl transform 
+            hover:-translate-y-10 transition-all duration-500 dark:text-[#27374D] cursor-pointer"
           />
         ))}
     </div>

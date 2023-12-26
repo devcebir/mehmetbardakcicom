@@ -1,9 +1,19 @@
 "use client";
-import Link from "next/link";
-import { GiBowString } from "react-icons/gi";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import avatar from "@/public/avatar.png";
-import Image from "next/image";
+import Link from "next/link";
+import { TbAtom2 } from "react-icons/tb";
+import { TbAtom2Filled } from "react-icons/tb";
+
+import { PiProjectorScreenChart } from "react-icons/pi";
+import { PiProjectorScreenChartBold } from "react-icons/pi";
+
+import { PiPencilSimpleLineDuotone } from "react-icons/pi";
+import { PiPencilSimpleLineFill } from "react-icons/pi";
+
+import { GoBookmark } from "react-icons/go";
+import { GoBookmarkFill } from "react-icons/go";
 
 export default function Header() {
   const pathname = usePathname();
@@ -12,62 +22,84 @@ export default function Header() {
     {
       name: "Ana Sayfa",
       path: "/",
+      icon: <TbAtom2 />,
+      activeIcon: <TbAtom2Filled />,
     },
     {
       name: "Projeler",
       path: "/projects",
+      icon: <PiProjectorScreenChart />,
+      activeIcon: <PiProjectorScreenChartBold />,
     },
 
     {
       name: "Blog",
       path: "/blog",
+      icon: <PiPencilSimpleLineDuotone />,
+      activeIcon: <PiPencilSimpleLineFill />,
     },
     {
       name: "Yer İşaretleri",
       path: "/bookmarks",
+      icon: <GoBookmark />,
+      activeIcon: <GoBookmarkFill />,
     },
   ];
 
   return (
-    <div
-      className="h-screen w-1/6 bg-[#DDE6ED] dark:bg-[#27374D] flex flex-col items-center justify-between py-5
-    rounded-e-3xl"
-    >
-      <Link href="/">
-        <GiBowString
-          className="text-5xl hover:opacity-60 transition-all
-         duration-300 text-[#27374D] dark:text-[#DDE6ED]"
-        />
-      </Link>
-
-      <nav className="text-zinc-400 flex flex-col items-center space-y-5">
-        {navLinks.map((link) => (
-          <Link
-            key={link.name}
-            href={link.path}
-            className={`text-3xl ${
-              pathname === link.path
-                ? "text-[#27374D] font-bold dark:text-[#DDE6ED]"
-                : "hover:text-[#27374D] dark:hover:text-[#DDE6ED] transition-all duration-300"
-            }`}
-          >
-            {link.name}
-          </Link>
-        ))}
-      </nav>
-
+    <header className="w-72 border-r-[0.5px] bg-zinc-50 p-2 text-sm flex flex-col">
       <Link
-        href="/about"
-        className="flex items-center space-x-3 border border-[#27374D] dark:border-[#DDE6ED] 
-        border-opacity-25 hover:border-opacity-100 transition-all
-        duration-300 hover:shadow-xl p-2 px-4 rounded-3xl"
+        href="/"
+        className="flex items-center justify-start p-2 gap-2 
+      text-sm hover:bg-gray-200 rounded-md transition-colors duration-300"
       >
-        <Image src={avatar} alt="avatar" className="rounded-full h-14 w-14" />
+        <Image
+          src={avatar}
+          alt="Mehmet Bardakcı - Fotoğraf"
+          width={40}
+          height={40}
+          className="rounded-full"
+        />
         <div>
-          <p className="font-medium">Mehmet Bardakcı</p>
-          <p className="text-zinc-400 text-sm">Frontend Developer</p>
+          <h1 className="font-semibold tracking-tight">Mehmet Bardakcı</h1>
+          <p className="text-gray-600">Frontend Developer</p>
         </div>
       </Link>
-    </div>
+
+      <nav className="mt-3 p-2">
+        <ul className="flex flex-col gap-1">
+          {navLinks.map((link) => (
+            <li
+              key={link.name}
+              className={`${
+                pathname === link.path
+                  ? "bg-gray-200 p-1 rounded-md"
+                  : "hover:bg-gray-200 p-1 rounded-md transition-colors duration-300"
+              }`}
+            >
+              <Link
+                href={link.path}
+                className={`${
+                  pathname === link.path
+                    ? "flex items-center gap-2 py-1 px-2 bg-gray-200 p-1 rounded-md font-semibold"
+                    : "flex items-center gap-2 py-1 px-2 font-medium hover:bg-gray-200 p-1 rounded-md transition-colors duration-300"
+                }`}
+              >
+                <span className="text-lg">
+                  {pathname === link.path ? link.activeIcon : link.icon}
+                </span>{" "}
+                {link.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <div className="h-[0.5px] bg-gray-200 w-full" />
+
+      <div>
+        
+      </div>
+    </header>
   );
 }

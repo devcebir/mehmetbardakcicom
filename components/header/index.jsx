@@ -33,7 +33,7 @@ export default function Header() {
     },
 
     {
-      name: "Blog",
+      name: "Yazılar",
       path: "/blog",
       icon: <PiPencilSimpleLineDuotone />,
       activeIcon: <PiPencilSimpleLineFill />,

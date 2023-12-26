@@ -5,15 +5,14 @@ export const metadata = {
 
 export default function page() {
   return (
-    <div className="flex flex-col flex-1 justify-center items-center h-screen gap-4">
-      <div class="flex space-x-2">
-        <span class="sr-only">Loading...</span>
-        <div class="h-8 w-8 bg-black rounded-full animate-bounce"></div>
-        <div class="h-8 w-8 bg-black rounded-full animate-bounce"></div>
-        <div class="h-8 w-8 bg-black rounded-full animate-bounce"></div>
-      </div>
-
-      <p className="text-2xl">Kodlanıyor, çok yakında yayında 👨🏻‍💻</p>
+    <div className="flex flex-col flex-1 h-screen px-52 pt-24 max-[1024px]:px-28 max-[768px]:px-5 max-[768px]:pt-12">
+      <p className="font-bold text-xl mb-2">Ana Sayfa</p>
+      <p className="leading-7">
+        Merhaba, ben Mehmet. 👋 Kodların arasında kaybolan, sadeliği seven bir
+        yazılım geliştiricisiyim. Aynı zamanda tarih meraklısıyım. Seninle
+        paylaşmak istediğim bu küçük dünyada, kodlarımın ve geçmişin izlerinin
+        arasında geziniyorum. Hoş geldin! 🙃
+      </p>
     </div>
   );
 }

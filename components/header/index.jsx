@@ -88,14 +88,14 @@ export default function Header() {
 
   return (
     <div>
-      <div className="hidden max-[768px]:block border-b-[0.5px] p-2 pt-4">
+      <div className="hidden max-[768px]:block border-b-[0.5px] border-gray-300 p-2 pt-4">
         <button onClick={handleClick}>
           <TbAtom2 className="text-2xl" />
         </button>
       </div>
 
       {clicked && (
-        <header className="hidden max-[768px]:block absolute z-50 border-r-[0.5px] bg-zinc-50 p-2 text-sm flex-col h-screen">
+        <header className="hidden max-[768px]:block fixed z-50 border-r-[0.5px] bg-zinc-50 p-2 text-sm flex-col h-screen">
           <Link
             href="/"
             onClick={linkHandleClick}

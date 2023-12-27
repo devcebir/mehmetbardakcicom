@@ -17,7 +17,7 @@ import { PiPencilSimpleLineFill } from "react-icons/pi";
 import { GoBookmark } from "react-icons/go";
 import { GoBookmarkFill } from "react-icons/go";
 
-import "./styles.css"
+import "./styles.css";
 
 import {
   FaXTwitter,
@@ -101,8 +101,7 @@ export default function Header() {
 
       {clicked && (
         <header
-          className={`acilisMenu hidden max-[768px]:block fixed z-50 border-r-[0.5px] dark:border-gray-500 bg-zinc-50 dark:bg-[#191919] p-2 text-sm flex-col h-screen 
-          transition-transform transform -translate-x-60 ${clicked && "-translate-x-0"} ease-out duration-300`}
+          className={`acilisMenu hidden max-[768px]:block fixed z-50 border-r-[0.5px] dark:border-gray-500 bg-zinc-50 dark:bg-[#191919] p-2 text-sm flex-col h-screen `}
         >
           <div className="flex items-center justify-between pr-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md transition-colors duration-300">
             <Link

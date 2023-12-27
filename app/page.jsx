@@ -5,7 +5,7 @@ export const metadata = {
 
 export default function page() {
   return (
-    <div className="flex flex-col flex-1 h-screen px-96 pt-24 max-[1024px]:px-28 max-[768px]:px-5 max-[768px]:pt-12">
+    <div className="flex flex-col flex-1 h-screen px-96 pt-24 max-[1568px]:px-64 max-[1024px]:px-28 max-[768px]:px-5 max-[768px]:pt-12">
       <div className="flex flex-col gap-5">
         <p className="leading-7">
           Selam! Ben Mehmet. 👋 İşte karşında, kodların ve tasarımın ardındaki
@@ -21,6 +21,8 @@ export default function page() {
           kelimelerin içinde, sadece bir tık ötedeyim. 🚀
         </p>
       </div>
+
+      <div></div>
     </div>
   );
 }

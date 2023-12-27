@@ -1,8 +1,7 @@
 "use client";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import { IoColorPaletteOutline } from "react-icons/io5";
-import { IoColorPalette } from "react-icons/io5";
+import { LuSun, LuMoonStar } from "react-icons/lu";
 
 export default function ThemeComp() {
   const [mounted, setMounted] = useState(false);
@@ -17,16 +16,15 @@ export default function ThemeComp() {
     <div className="flex items-center text-2xl">
       {mounted &&
         (themeMode === "light" ? (
-          <IoColorPaletteOutline
+          <LuMoonStar
             onClick={() => setTheme("dark")}
-            className="text-9xl max-[768px]:text-xl transform 
-            hover:-translate-y-10 transition-all duration-500 cursor-pointer text-[#DDE6ED]"
+            className="max-[768px]:text-xl transform cursor-pointer"
           />
         ) : (
-          <IoColorPalette
+          <LuSun
             onClick={() => setTheme("light")}
-            className="text-9xl text-white max-[768px]:text-xl transform 
-            hover:-translate-y-10 transition-all duration-500 dark:text-[#27374D] cursor-pointer"
+            className="text-white max-[768px]:text-xl transform dark:text-white
+             cursor-pointer"
           />
         ))}
     </div>

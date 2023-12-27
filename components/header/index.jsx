@@ -3,6 +3,8 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import avatar from "@/public/avatar.png";
 import Link from "next/link";
+import { IoMenu } from "react-icons/io5";
+
 import { TbAtom2 } from "react-icons/tb";
 import { TbAtom2Filled } from "react-icons/tb";
 
@@ -91,7 +93,7 @@ export default function Header() {
     <div>
       <div className="hidden max-[768px]:block border-b-[0.5px] border-gray-300 p-2 pt-4">
         <button onClick={handleClick}>
-          <TbAtom2 className="text-2xl" />
+          <IoMenu className="text-2xl" />
         </button>
       </div>
 

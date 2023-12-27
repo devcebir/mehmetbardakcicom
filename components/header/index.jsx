@@ -17,6 +17,8 @@ import { PiPencilSimpleLineFill } from "react-icons/pi";
 import { GoBookmark } from "react-icons/go";
 import { GoBookmarkFill } from "react-icons/go";
 
+import "./styles.css"
+
 import {
   FaXTwitter,
   FaInstagram,
@@ -98,13 +100,16 @@ export default function Header() {
       </div>
 
       {clicked && (
-        <header className="hidden max-[768px]:block fixed z-50 border-r-[0.5px] dark:border-gray-500 bg-zinc-50 dark:bg-[#191919] p-2 text-sm flex-col h-screen">
+        <header
+          className={`acilisMenu hidden max-[768px]:block fixed z-50 border-r-[0.5px] dark:border-gray-500 bg-zinc-50 dark:bg-[#191919] p-2 text-sm flex-col h-screen 
+          transition-transform transform -translate-x-60 ${clicked && "-translate-x-0"} ease-out duration-300`}
+        >
           <div className="flex items-center justify-between pr-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md transition-colors duration-300">
             <Link
               href="/"
               onClick={linkHandleClick}
               className="flex items-center justify-start p-2 gap-2
-            text-sm "
+            text-sm"
             >
               <Image
                 src={avatar}
@@ -138,6 +143,7 @@ export default function Header() {
                 >
                   <Link
                     href={link.path}
+                    onClick={linkHandleClick}
                     className={`${
                       pathname === link.path
                         ? "flex items-center gap-2 py-1 px-2 p-1 rounded-md font-semibold"

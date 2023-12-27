@@ -11,6 +11,8 @@
   "dependencies": {
     "framer-motion": "^10.16.7",
     "geist": "^1.2.0",
+    "gray-matter": "^4.0.3",
+    "markdown-json": "^1.6.1",
     "next": "14.0.3",
     "next-themes": "^0.2.1",
     "react": "^18",

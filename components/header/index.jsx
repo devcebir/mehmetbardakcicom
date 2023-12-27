@@ -93,15 +93,15 @@ export default function Header() {
 
   return (
     <div>
-      <div className="hidden max-[768px]:block border-b-[0.5px] border-gray-300 p-2 pt-4">
-        <button onClick={handleClick}>
+      <div className="hidden max-[768px]:block border-b-[0.5px] border-gray-300 px-4 py-2 fixed z-50 bg-white w-full">
+        <button className="flex" onClick={handleClick}>
           <IoMenu className="text-2xl" />
         </button>
       </div>
 
       {clicked && (
         <header
-          className={`acilisMenu hidden max-[768px]:block fixed z-50 border-r-[0.5px] dark:border-gray-500 bg-zinc-50 dark:bg-[#191919] p-2 text-sm flex-col h-screen `}
+          className={`acilisMenu hidden max-[768px]:block fixed z-50 border-r-[0.5px] top-[40.5px] dark:border-gray-500 bg-zinc-50 dark:bg-[#191919] p-2 text-sm flex-col h-screen `}
         >
           <div className="flex items-center justify-between pr-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md transition-colors duration-300">
             <Link
@@ -185,7 +185,7 @@ export default function Header() {
           </div>
         </header>
       )}
-      <header className="w-72 border-r-[0.5px] dark:border-gray-500 bg-zinc-50 dark:bg-[#191919] p-2 text-sm flex flex-col max-[768px]:hidden h-screen">
+      <header className="w-72 border-r-[0.5px] dark:border-gray-500 bg-zinc-50 dark:bg-[#191919] p-2 text-sm flex-col max-[768px]:hidden fixed h-screen">
         <div className="flex items-center justify-between pr-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md transition-colors duration-300">
           <Link
             href="/"

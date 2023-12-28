@@ -9,7 +9,7 @@ export default function Page({ params }) {
   }
 
   return (
-    <div className="flex flex-col gap-3 h-screen ml-72 max-[768px]:ml-0 px-96 pt-24 max-[1568px]:px-64 max-[1024px]:px-28 max-[768px]:px-5 max-[768px]:pt-20">
+    <div className="flex flex-col gap-3  ml-72 max-[768px]:ml-0 px-96 pt-24 max-[1568px]:px-64 max-[1024px]:px-28 max-[768px]:px-5 max-[768px]:pt-20 max-[768px]:pb-14">
       <h1 className="font-semibold">{post.title}</h1>
       <p>{post.contentA}</p>
       <p>{post.contentB}</p>

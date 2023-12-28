@@ -93,7 +93,7 @@ export default function Header() {
 
   return (
     <div>
-      <div className="hidden max-[768px]:block border-b-[0.5px] border-gray-300 px-4 py-2 fixed z-50 bg-white w-full">
+      <div className="hidden max-[768px]:block border-b-[0.5px] border-gray-300 dark:border-gray-500 px-4 py-2 fixed z-50 bg-white dark:bg-black w-full">
         <button className="flex" onClick={handleClick}>
           <IoMenu className="text-2xl" />
         </button>

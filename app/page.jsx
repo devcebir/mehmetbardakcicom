@@ -3,9 +3,6 @@ export const metadata = {
   description: "I am a Frontend Developer",
 };
 
-import posts from "@/posts.json";
-import Link from "next/link";
-
 export default function page() {
   return (
     <div className="flex flex-col flex-1 h-screen ml-72 max-[768px]:ml-0 px-96 pt-24 max-[1568px]:px-64 max-[1024px]:px-28 max-[768px]:px-5 max-[768px]:pt-20">
@@ -23,21 +20,6 @@ export default function page() {
           götürdüğü yerlerden bahsedeceğim. Kodların ve kelimelerin içinde,
           sadece bir tık ötedeyim. 🚀
         </p>
-      </div>
-
-      <div>
-        <h3 className="mt-6 mb-2 font-semibold text-lg">Yazılar</h3>
-        <ul className="flex flex-col gap-1">
-          {posts.map((post) => (
-            <li key={post.id}>
-              <Link href={`/blog/${post.id}`}>
-                <h2 className="hover:translate-x-2 transition-all duration-300">
-                  {post.title}
-                </h2>
-              </Link>
-            </li>
-          ))}
-        </ul>
       </div>
     </div>
   );

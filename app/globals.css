@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.body-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.kodlananMetin {
+  font-size: 24px;
+  font-family: monospace;
+  color: #333;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.kodlananMetin p {
+  display: inline-block;
+}
+
+.yananNokta {
+  opacity: 0;
+  animation: yanmaAnimasyon 1s infinite;
+}
+
+.yananNokta:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.yananNokta:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.yananNokta:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes yanmaAnimasyon {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    opacity: 0;
+  }
+  30%,
+  60% {
+    opacity: 1;
+  }
+}
